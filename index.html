@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpet Kenya Limited - Design & Branding Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Simpet Kenya Ltd Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#opinions">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Simpet Kenya Limited</h1>
+            <p>Your Partner in Design Excellence & Brand Success</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="section-intro">Simpet Kenya Limited is a premier creative and design institution committed to transforming businesses through innovative solutions. With offices in Nairobi and Kikuyu, we serve clients across East Africa.</p>
+            
+            <div class="core-values">
+                <h3>Our Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h4>Service</h4>
+                        <p>Dedicated to serving our clients with exceptional quality and responsiveness.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Integrity</h4>
+                        <p>Honest, transparent, and ethical in all our dealings and partnerships.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Motivation</h4>
+                        <p>Driven by passion to achieve excellence and inspire our teams.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Professionalism</h4>
+                        <p>Maintaining the highest standards in every project and interaction.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Excellence</h4>
+                        <p>Pursuing perfection in creativity, execution, and client satisfaction.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Trust</h4>
+                        <p>Building lasting relationships based on reliability and proven results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-intro">Comprehensive creative solutions tailored to your business needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Designing</h3>
+                    <p>Creative graphic design solutions that capture your brand's essence and engage your audience.</p>
+                    <button class="service-button" data-service="designing">Learn More</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Branding</h3>
+                    <p>Strategic branding services to establish a strong, memorable identity in the market.</p>
+                    <button class="service-button" data-service="branding">Learn More</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🖨️</div>
+                    <h3>Printing</h3>
+                    <p>High-quality printing services for all your promotional and operational materials.</p>
+                    <button class="service-button" data-service="printing">Learn More</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📖</div>
+                    <h3>Publishing</h3>
+                    <p>Professional publishing solutions from layout to final production of your content.</p>
+                    <button class="service-button" data-service="publishing">Learn More</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📢</div>
+                    <h3>Advertising</h3>
+                    <p>Strategic advertising campaigns designed to maximize your reach and impact.</p>
+                    <button class="service-button" data-service="advertising">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal with Image Slider -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Our Work Examples</h2>
+            
+            <div class="slider-container">
+                <div class="slider">
+                    <img id="sliderImage" src="" alt="Portfolio image" class="slider-image">
+                </div>
+                <button class="slider-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="slider-button next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">1</span>
+            </div>
+            
+            <div class="slide-dots" id="slideDots"></div>
+        </div>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <section id="opinions" class="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <p class="section-intro">What our clients say about us</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Simpet transformed our brand identity. Their team is incredibly professional and delivers exceptional results."</p>
+                    <h4>- John Kipchoge, TechStart Kenya</h4>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Outstanding service from start to finish. The design work exceeded our expectations and really resonated with customers."</p>
+                    <h4>- Mary Okonkwo, Fashion Boutique</h4>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Highly recommend Simpet for any advertising and branding needs. Professional, reliable, and results-driven."</p>
+                    <h4>- Nancy Njogu, Chief Executive Officer.</h4>
+                </div>
+                
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Their printing quality is unmatched. Every detail is perfect and the turnaround time is impressive."</p>
+                    <h4>- Joyce K. , Head of Marketing</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-intro">Visit us at either of our locations or reach out online</p>
+            
+            <div class="contact-grid">
+                <div class="branch">
+                    <h3>Nairobi Branch</h3>
+                    <p><strong>Address:</strong>Sunrise Building, 1st Floor<br>Keekorok Road<br>Near Khoja Roundabout<br>Nairobi, Kenya</p>
+                    <p><strong>Phone:</strong> +254 20 2600 401</p>
+                    <p><strong>Email:</strong> www.skl.com</p>
+                    <button class="contact-button">Email Us</button>
+                </div>
+                
+                <div class="branch">
+                    <h3>Kikuyu Branch</h3>
+                    <p><strong>Address:</strong> Eureka Towers, 4th Floor<br>Suite C1 & C2<br>Post Office Rd<br>Rungiri, Kikuyu Town</p>
+                    <p><strong>Phone:</strong> +254 20 2600 401</p>
+                    <p><strong>Email:</strong> www.skl.com</p>
+                    <button class="contact-button">Email Us</button>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <h3>Send us a Message</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Simpet Kenya Limited</h4>
+                    <p>Premier creative and design solutions across Kenya. We specialize in designing, branding, printing, publishing, and advertising services that drive business success.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Graphic Designing</li>
+                        <li>Strategic Branding</li>
+                        <li>Professional Printing</li>
+                        <li>Publishing Services</li>
+                        <li>Advertising Campaigns</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li>Nairobi Office</li>
+                        <li>Kikuyu Branch</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@simpet.co.ke</p>
+                    <p>Phone: +254 20 2600 401</p>
+                    <p>Hours: Mon-Fri 9AM-5PM EAT</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Simpet Kenya Limited. All rights reserved. | Service • Integrity • Motivation • Professionalism • Excellence • Trust</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
